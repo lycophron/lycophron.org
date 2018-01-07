@@ -8,6 +8,12 @@ systemctl status nginx.service
 journalctl -f -u nginx.service
 ```
 
+New certificates:
+https://certbot.eff.org/#ubuntuxenial-other
+```bash
+sudo certbot certonly -d app.lycophron.org
+```
+
 To renew the certificates run:
 ```bash
 sudo service nginx stop
