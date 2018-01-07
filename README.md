@@ -4,6 +4,7 @@ Updating nginx.conf
 ```bash
 sudo cp nginx.conf /etc/nginx/sites-available/default 
 sudo service nginx restart
+systemctl status nginx.service
 journalctl -f -u nginx.service
 ```
 
