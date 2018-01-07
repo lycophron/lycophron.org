@@ -1,5 +1,11 @@
 # lycophron.org
 
+Updating nginx.conf
+```bash
+sudo cp nginx.conf /etc/nginx/sites-available/default 
+sudo service nginx restart
+journalctl -f -u nginx.service
+```
 
 To renew the certificates run:
 ```bash
